@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
+
+    <!--Header-->
     <header>
         <div class="row no-gutters">
             <div class="col-12 text-center page-heading">
@@ -20,8 +22,12 @@
             </div>
         </div>
     </header>
+
+    <!--Main section of page-->
     <section class="main-container container-fluid">
         <div class="row no-gutters">
+
+            <!--Game rules section-->
             <div class="col-12 col-xl-4 text-center">
                 <h3>Rules:</h3>
                 <ol>
@@ -30,6 +36,8 @@
                     <li>The number of notes played will increase as you get more and more correct</li>
                 </ol>
             </div>
+
+            <!--Piano section-->
             <div class="col-12 col-xl-8 text-center justify-content-center">
                 <div class="piano">
                     <div id="c" class="key white"></div>
@@ -48,20 +56,27 @@
             </div>
         </div>
         <div class="row">
+
+            <!--Restart button-->
             <div class="col-12 col-xl-4 text-center">
                 <button id="restart-button">
                     Restart Game
                 </button>
             </div>
+
+            <!--Score-->
             <div class="col-12 col-md-6 col-xl-4 text-center">
                 <p>Score: <span id="score"></span> </p>
             </div>
+
+            <!--High score-->
             <div class="col-12 col-md-6 col-xl-4 text-center">
                 <p>High score: <span id="high-score"></span> </p>
             </div>
         </div>
     </section>
 
+    <!--Footer-->
     <footer>
         <div class="row no-gutters">
             <div class="col-12 text-center">
@@ -69,6 +84,20 @@
             </div>
         </div>
     </footer>
+
+    <!--Audio Files-->
+    <audio src="assets/audio/c.mp3" id="c-audio"></audio>
+    <audio src="assets/audio/cs.mp3" id="cs-audio"></audio>
+    <audio src="assets/audio/d.mp3" id="d-audio"></audio>
+    <audio src="assets/audio/ds.mp3" id="ds-audio"></audio>
+    <audio src="assets/audio/e.mp3" id="e-audio"></audio>
+    <audio src="assets/audio/f.mp3" id="f-audio"></audio>
+    <audio src="assets/audio/fs.mp3" id="fs-audio"></audio>
+    <audio src="assets/audio/g.mp3" id="g-audio"></audio>
+    <audio src="assets/audio/gs.mp3" id="gs-audio"></audio>
+    <audio src="assets/audio/a.mp3" id="a-audio"></audio>
+    <audio src="assets/audio/as.mp3" id="as-audio"></audio>
+    <audio src="assets/audio/b.mp3" id="b-audio"></audio>
 
     <!--Bootstrap and jQuery scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

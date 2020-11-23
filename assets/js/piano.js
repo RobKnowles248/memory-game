@@ -12,28 +12,35 @@ $(document).ready(function() {
 
         //Check if the input is a string
         if (typeof(note) != "string") {
-            console.log("playNote didn't receive a string");
+            console.log("The function playNote didn't receive a string");
         }
         
-        //First check if it is a white or black note
+        //Highlight a white note for 0.5s
         if (note.length == 1) {
             $(`#${note}`).addClass("active-white");
             setTimeout(function() {
                 $(`#${note}`).removeClass("active-white");
             }, 500);
+        
+        //Hihglight a black note for 0.5s
         } else if (note.length == 2) {
             $(`#${note}`).addClass("active-black");
             setTimeout(function() {
                 $(`#${note}`).removeClass("active-black");
             }, 500);
-        };
+
+        //Log that the note string was the wrong length    
+        } else {
+            console.log("The string inputted to playNote was the wrong length");
+        }
 
         //Play the sound of that note
+        $(`audio#${note}-audio`)[0].play();
     }
 
     // Function that will play score + 1 numbers of notes
     function playNotes(score) {
-        for (var i = 0; i < score; i++) {
+        for (let i = 0; i < score; i++) {
             //Need to randomize a note here to give a random note
             playNote(note);
             // Now need to append an array that keeps track of which notes were played
