@@ -49,11 +49,14 @@ footer {
 /*----------------------------Piano Object */
 
 .piano {
-    height: 200px;
-    width: 90%;
-    padding: 10px;
+    height: 300px;
+    width: 98%;
+    padding: 15px;
     background-color: #000;
-    margin: 0 auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: center;
     display: flex;
 }
@@ -68,6 +71,7 @@ footer {
     height: 100%;
     background-color: #fff;
     border: 1px solid #000;
+    border-radius: 0 0 5px 5px;
 }
 
 .black {
@@ -77,4 +81,5 @@ footer {
     height: 70%;
     background-color: #000;
     margin: 0 -4%;
+    border-radius: 0 0 5px 5px;
 }
