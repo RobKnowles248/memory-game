@@ -26,3 +26,9 @@ footer {
 .copyright-text {
     color: #fff;
 }
+
+/*----------------------------Main container */
+
+.main-container {
+    min-height: calc(100vh - 96px);
+}
