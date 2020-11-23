@@ -22,7 +22,7 @@ $(document).ready(function() {
                 $(`#${note}`).removeClass("active-white");
             }, 500);
         
-        //Hihglight a black note for 0.5s
+        //Highlight a black note for 0.5s
         } else if (note.length == 2) {
             $(`#${note}`).addClass("active-black");
             setTimeout(function() {
@@ -38,13 +38,15 @@ $(document).ready(function() {
         $(`audio#${note}-audio`)[0].play();
     }
 
-    // Function that will play score + 1 numbers of notes
+    // Function that will play (score + 1) numbers of notes. It returns an array of the notes played.
     function playNotes(score) {
-        for (let i = 0; i < score; i++) {
-            //Need to randomize a note here to give a random note
-            playNote(note);
-            // Now need to append an array that keeps track of which notes were played
+        let notesPlayed = [];
+        for (let i = 0; i <= score; i++) {
+            let randomNote = notes[Math.floor(Math.random * notes.length)];
+            playNote(randomNote);
+            notesPlayed.push(randomNote);
         }
+        return notesPlayed;
     }
 
     // Reset the scores on index.html
@@ -63,7 +65,7 @@ $(document).ready(function() {
     //Call the playNote function when a note is clicked
     $(".key").click(function() {
         playNote($(this).attr("id"));
-    })
+    });
 
     //Call the resetScores function
     resetScores();
