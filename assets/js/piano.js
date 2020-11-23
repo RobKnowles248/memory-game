@@ -5,24 +5,30 @@ $(document).ready(function() {
     var highScore = 0;
 
     // Make a constant array with the names of the notes
-    const notes = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"];
+    const notes = ["c", "cs", "d", "ds", "e", "f", "fs", "g", "gs", "a", "as", "b"];
 
     // Function that will play a note when given the name of that note
     function playNote(note) {
-        switch (note) {
-            case "c": break;
-            case "c#": break;
-            case "d": break;
-            case "d#": break;
-            case "e": break;
-            case "f": break;
-            case "f#": break;
-            case "g": break;
-            case "g#": break;
-            case "a": break;
-            case "a#": break;
-            case "b": break;
+
+        //Check if the input is a string
+        if (typeof(note) != "string") {
+            console.log("playNote didn't receive a string");
         }
+        
+        //First check if it is a white or black note
+        if (note.length == 1) {
+            $(`#${note}`).addClass("active-white");
+            setTimeout(function() {
+                $(`#${note}`).removeClass("active-white");
+            }, 500);
+        } else if (note.length == 2) {
+            $(`#${note}`).addClass("active-black");
+            setTimeout(function() {
+                $(`#${note}`).removeClass("active-black");
+            }, 500);
+        };
+
+        //Play the sound of that note
     }
 
     // Function that will play score + 1 numbers of notes
@@ -47,5 +53,12 @@ $(document).ready(function() {
         $("#high-score").text(highScore);
     }
 
+    //Call the playNote function when a note is clicked
+    $(".key").click(function() {
+        let keyValue = $(this).attr("id");
+        playNote(keyValue);
+    })
+
+    //Call the resetScores function
     resetScores();
 })

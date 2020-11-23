@@ -83,3 +83,12 @@ footer {
     margin: 0 -4%;
     border-radius: 0 0 5px 5px;
 }
+
+.active-white {
+    background-color: grey;
+}
+
+.active-black {
+    background-color: grey;
+    border: 2px solid #000;
+}
