@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*----------------------------General Headings/margins/text */
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Goldman", sans-serif;
+}
+
+/*----------------------------Header */
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+/*----------------------------Footer */
+
+footer {
+    background-color: #000;
+}
+
+.copyright-text {
+    color: #fff;
+}
