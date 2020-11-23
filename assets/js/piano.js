@@ -62,8 +62,7 @@ $(document).ready(function() {
 
     //Call the playNote function when a note is clicked
     $(".key").click(function() {
-        let keyValue = $(this).attr("id");
-        playNote(keyValue);
+        playNote($(this).attr("id"));
     })
 
     //Call the resetScores function
