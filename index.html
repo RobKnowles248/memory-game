@@ -15,31 +15,48 @@
 <body>
     <header>
         <div class="row no-gutters">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center page-heading">
                 <h1>Memory Piano</h1>
             </div>
         </div>
     </header>
     <section class="main-container container-fluid">
         <div class="row">
-            <div class="col col-xl-4">
-                Rules text will go here
+            <div class="col-12 col-xl-4 text-center">
+                <h3>Rules:</h3>
+                <ol>
+                    <li></li>
+                    <li></li>
+                </ol>
             </div>
-            <div class="col col-xl-8">
-                Piano object will go here
+            <div class="col-12 col-xl-8 text-center">
+                <div class="piano">
+                    <div id="c" class="key white"></div>
+                    <div id="cs" class="key black"></div>
+                    <div id="d" class="key white"></div>
+                    <div id="ds" class="key black"></div>
+                    <div id="e" class="key white"></div>
+                    <div id="f" class="key white"></div>
+                    <div id="fs" class="key black"></div>
+                    <div id="g" class="key white"></div>
+                    <div id="gs" class="key black"></div>
+                    <div id="a" class="key white"></div>
+                    <div id="as" class="key black"></div>
+                    <div id="b" class="key white"></div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col col-xl-4">
-                <button>
-                    Restart Button
+            <div class="col-12 col-xl-4 text-center">
+                <button id="restart-button">
+                    Restart Game
                 </button>
             </div>
-            <div class="col col-md-6 col-xl-4">
-                Score will go here
+            <div class="col-12 col-md-6 col-xl-4 text-center">
+                <p id="score">Score: ...</p>
             </div>
-            <div class="col col-md-6 col-xl-4">
-                High score will go here
+            <div class="col-12 col-md-6 col-xl-4 text-center">
+                <p id="high-score">High score: ...</p>
             </div>
         </div>
     </section>
