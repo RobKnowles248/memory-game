@@ -34,12 +34,18 @@ $(document).ready(function() {
         }
     }
 
-    // Reset the high score
-    if (highScore < score) {
-        highScore = score;
+    // Reset the scores on index.html
+    function resetScores() {
+
+        //Reset the high score
+        if (highScore < score) {
+            highScore = score;
+        };
+
+        //Shows the score and high score on index.html
+        $("#score").text(score);
+        $("#high-score").text(highScore);
     }
 
-    // Show the score and high score on the page
-    $("#score").text(score);
-    $("#high-score").text(highScore);
+    resetScores();
 })
