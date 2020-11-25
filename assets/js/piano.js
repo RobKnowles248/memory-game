@@ -5,7 +5,7 @@ $(document).ready(function() {
     var highScore = 0;
 
     // Make a constant array with the names of the notes
-    const notes = ["c", "cs", "d", "ds", "e", "f", "fs", "g", "gs", "a", "as", "b"];
+    const pianoNotes = ["c", "cs", "d", "ds", "e", "f", "fs", "g", "gs", "a", "as", "b"];
 
     // Function that will play a note when given the name of that note
     function playNote(note) {
@@ -38,11 +38,11 @@ $(document).ready(function() {
         $(`audio#${note}-audio`)[0].play();
     }
 
-    // Function that will play (score + 1) numbers of notes. It returns an array of the notes played.
+    // Function that will play (score + 1) numbers of notes. It will return an array of the notes played.
     function playNotes(score) {
         let notesPlayed = [];
         for (let i = 0; i <= score; i++) {
-            let randomNote = notes[Math.floor(Math.random * notes.length)];
+            let randomNote = pianoNotes[Math.floor(Math.random * pianoNotes.length)];
             playNote(randomNote);
             notesPlayed.push(randomNote);
         }
@@ -66,6 +66,17 @@ $(document).ready(function() {
     $(".key").click(function() {
         playNote($(this).attr("id"));
     });
+
+    //Start the game when restart game is clicked
+    $("#restart-button").click(function() {
+        score = 0; //Reset the score to 0
+        var lost = false; //Declares a variable to keep track of whether the game has been lost yet
+        while (lost == false) {
+            let playedNotes = playNotes(score);
+            //Here want to write a something that checks for the right clicks of buttons
+            score += 1
+        }
+    })
 
     //Call the resetScores function
     resetScores();
