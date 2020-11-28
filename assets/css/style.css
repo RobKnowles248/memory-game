@@ -21,13 +21,15 @@ header {
 .page-heading {
     height: 70px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-heading h1 {
-    height: 100%;
-    padding-top: 0 auto;
-    padding-bottom: 0 auto;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 /*----------------------------Footer */
@@ -36,14 +38,38 @@ footer {
     background-color: #000;
 }
 
+.footer-div {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .copyright-text {
     color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
 }
 
 /*----------------------------Main container */
 
 .main-container {
-    min-height: calc(100vh - 96px);
+    min-height: calc(100vh - 120px);
+}
+
+/*----------------------------Page structure */
+
+.top-row {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.bottom-row {
+    display: flex;
+    align-items: center;
+    min-height: 20vh;
 }
 
 /*----------------------------Rules section */
@@ -72,15 +98,17 @@ footer {
 
 /*----------------------------Piano Object */
 
+.piano-col {
+    height: 95%;
+}
+
 .piano {
-    height: 300px;
+    height: 400px;
     width: 98%;
     padding: 15px;
     background-color: #000;
     margin-left: 0 auto;
     margin-right: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
     justify-content: center;
     display: flex;
 }
@@ -118,6 +146,13 @@ footer {
 }
 
 /*----------------------------Restart button */
+
+#restart-button {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /*----------------------------Scores section */
 
