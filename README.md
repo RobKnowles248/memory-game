@@ -83,12 +83,10 @@ In order to replicate the process on your own computer you can paste `git clone 
 
 ## Credits
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
 ### Media
+
 - The audio for the piano keys was obtained from this [Reddit post](https://www.reddit.com/r/piano/comments/3u6ke7/heres_some_midi_and_mp3_files_for_individual/).
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from the memory game [Simon](https://en.wikipedia.org/wiki/Simon_(game)).
