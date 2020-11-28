@@ -42,7 +42,8 @@ $(document).ready(function() {
     function playNotes(score) {
         let notesPlayed = [];
         for (let i = 0; i <= score; i++) {
-            let randomNote = pianoNotes[Math.floor(Math.random * pianoNotes.length)];
+            let randomNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)];
+            console.log(randomNote);
             playNote(randomNote);
             notesPlayed.push(randomNote);
         }
@@ -67,6 +68,7 @@ $(document).ready(function() {
         playNote($(this).attr("id"));
     });
 
+    /*
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
         score = 0; //Reset the score to 0
@@ -77,6 +79,7 @@ $(document).ready(function() {
             score += 1
         }
     })
+    */
 
     //Call the resetScores function
     resetScores();
