@@ -68,18 +68,21 @@ $(document).ready(function() {
         playNote($(this).attr("id"));
     });
 
-    /*
+    
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
+        $("#restart-button").text("Restart Game"); //Changes the button to say Restart game rather than start game
         score = 0; //Reset the score to 0
+        /*
         var lost = false; //Declares a variable to keep track of whether the game has been lost yet
         while (lost == false) {
             let playedNotes = playNotes(score);
             //Here want to write a something that checks for the right clicks of buttons
             score += 1
         }
+        */
     })
-    */
+    
 
     //Call the resetScores function
     resetScores();
