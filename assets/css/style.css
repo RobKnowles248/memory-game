@@ -46,6 +46,30 @@ footer {
     min-height: calc(100vh - 96px);
 }
 
+/*----------------------------Rules section */
+
+.rules-div {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 8px solid #000;
+}
+
+.rules-div h3 {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 35px;
+}
+
+.rules-div ol {
+    margin: 20px auto;
+    text-align: left;
+    font-size: 20px;
+}
+
 /*----------------------------Piano Object */
 
 .piano {
@@ -100,11 +124,17 @@ footer {
 .score-div {
     width: 90%;
     margin: 0 auto;
-    padding: 10px 0 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 0 15px 0;
     background-color: #000;
     color: #fff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .score-div p {
     font-size: 20px;
+    margin: 0;
 }
