@@ -63,13 +63,13 @@ footer {
 .top-row {
     display: flex;
     align-items: center;
-    min-height: 70vh;
+    min-height: calc(70vh - 60px);
 }
 
 .bottom-row {
     display: flex;
     align-items: center;
-    min-height: 20vh;
+    min-height: calc(30vh - 60px);
 }
 
 /*----------------------------Rules section */
