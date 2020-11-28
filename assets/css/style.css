@@ -98,17 +98,12 @@ footer {
 
 /*----------------------------Piano Object */
 
-.piano-col {
-    height: 95%;
-}
-
 .piano {
-    height: 400px;
+    height: 250px;
     width: 98%;
     padding: 15px;
     background-color: #000;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin: 0 auto;
     justify-content: center;
     display: flex;
 }
@@ -172,4 +167,24 @@ footer {
 .score-div p {
     font-size: 20px;
     margin: 0;
+}
+
+/*----------------------------Media Queries */
+
+@media screen and (min-width: 768px) {
+    .piano {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .piano {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .piano {
+        height: 400px;
+    }
 }
