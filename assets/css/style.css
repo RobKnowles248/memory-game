@@ -188,6 +188,14 @@ footer {
     margin: 0;
 }
 
+.score-p {
+    padding-right: 20px;
+}
+
+.high-score-p {
+    padding-left: 20px;
+}
+
 /*----------------------------Media Queries */
 
 @media screen and (min-width: 768px) {
