@@ -59,6 +59,8 @@ $(document).ready(function() {
 
     // Function that will play (score + 1) numbers of notes. It will return an array of the notes played.
     function playNotes(score) {
+        notesClicked = [];
+        notesPlayed = [];
         for (let i = 0; i <= score; i++) {
             let randomNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)];
             console.log(randomNote);
@@ -70,8 +72,10 @@ $(document).ready(function() {
     }
 
     // Function that checks if the notesPlayed and notesClicked arrays match
-    function doNotesMatchUp(notesClicked, notesPlayed) {
-        return notesClicked == notesPlayed;
+    function doNotesMatchUp(firstNotes, secondNotes) {
+        console.log(JSON.stringify(firstNotes));
+        console.log(JSON.stringify(secondNotes));
+        return JSON.stringify(firstNotes) == JSON.stringify(secondNotes);
     }
 
     // Reset the scores on index.html
@@ -116,7 +120,8 @@ $(document).ready(function() {
         console.log(notesPlayed);
 
         // Check if the user clicked the correct keys
-        let matched = doNotesMatchUp();
+        let matched = doNotesMatchUp(notesClicked, notesPlayed);
+        console.log(matched);
         if (matched) {
             toggleSubmitButton();
             notesPlayed = [];
@@ -125,7 +130,7 @@ $(document).ready(function() {
             resetScores();
             playNotes(currentScore);
         } else {
-            // End the game here
+            console.log("Game Over");
         }
     })
 
