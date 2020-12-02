@@ -13,6 +13,16 @@ $(document).ready(function() {
     // Initialise the notes played array
     var notesPlayed = [];
 
+    // Function that toggles the submit button enabled or disabled
+    function toggleSubmitButton() {
+        $("#submit-button").toggleClass("disabled-button");
+        if ($("#submit-button").attr("disabled")) {
+            $("#submit-button").removeAttr("disabled");
+        } else {
+            $("#submit-button").attr("disabled", "disabled");
+        }
+    }
+
     // Function that checks if a note is white or black and gives a class accordingly
     function whiteOrBlackNote(note) {
 
