@@ -131,6 +131,7 @@ $(document).ready(function() {
             playNotes(currentScore);
         } else {
             console.log("Game Over");
+            toggleSubmitButton();
         }
     })
 
