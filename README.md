@@ -3,6 +3,8 @@
 A memory game in the style of Simon/Bop It where the player has to remember what notes were played on a piano and play them back. It will get harder as more and more notes have to be remembered.
 
 Created for my Code Institute Interactive Frontend Development milestone project.
+
+A link to the live site can be found [here](https://robknowles248.github.io/memory-game/).
  
 ## UX
 
