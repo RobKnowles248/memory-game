@@ -59,6 +59,9 @@ $(document).ready(function() {
     }
 
     // Function that checks if the notesPlayed and notesClicked arrays match
+    function doNotesMatchUp(notesClicked, notesPlayed) {
+        return notesClicked == notesPlayed;
+    }
 
     // Reset the scores on index.html
     function resetScores() {
