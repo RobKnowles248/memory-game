@@ -162,6 +162,12 @@ footer {
     color: #000;
 }
 
+.disabled-button {
+    background-color: #fff;
+    border: 5px solid #000;
+    color: #000;
+}
+
 /*----------------------------Scores section */
 
 .score-div {
