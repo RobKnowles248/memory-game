@@ -99,6 +99,9 @@ $(document).ready(function() {
         $("#restart-button").text("Restart Game"); //Changes the button to say Restart game rather than start game
         currentScore = 0;
         resetScores();
+        if (!$("#submit-button").attr("disabled")) {
+            toggleSubmitButton();
+        }
         playNotes(currentScore); //Starts the game
     })
 
@@ -108,6 +111,9 @@ $(document).ready(function() {
         if ($("#submit-button").attr("disabled")) {
             return;
         };
+
+        console.log(notesClicked);
+        console.log(notesPlayed);
 
         // Check if the user clicked the correct keys
         let matched = doNotesMatchUp();
