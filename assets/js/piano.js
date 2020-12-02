@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // Initialise the score and high score variables
-    var score = 0;
+    var currentScore = 0;
     var highScore = 0;
 
     // Make a constant array with the names of the notes
@@ -59,7 +59,6 @@ $(document).ready(function() {
 
     // Function that will play (score + 1) numbers of notes. It will return an array of the notes played.
     function playNotes(score) {
-        notesPlayed.clear();
         for (let i = 0; i <= score; i++) {
             let randomNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)];
             console.log(randomNote);
@@ -79,12 +78,12 @@ $(document).ready(function() {
     function resetScores() {
 
         //Reset the high score
-        if (highScore < score) {
-            highScore = score;
+        if (highScore < currentScore) {
+            highScore = currentScore;
         };
 
         //Shows the score and high score on index.html
-        $("#score").text(score);
+        $("#score").text(currentScore);
         $("#high-score").text(highScore);
     }
 
@@ -98,8 +97,9 @@ $(document).ready(function() {
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
         $("#restart-button").text("Restart Game"); //Changes the button to say Restart game rather than start game
-        score = 0;
-        playNotes(score); //Starts the game
+        currentScore = 0;
+        resetScores();
+        playNotes(currentScore); //Starts the game
     })
 
     //Checks the scores when the submit button is clicked
@@ -113,11 +113,11 @@ $(document).ready(function() {
         let matched = doNotesMatchUp();
         if (matched) {
             toggleSubmitButton();
-            notesPlayed.clear();
-            notesClicked.clear();
-            score += 1;
+            notesPlayed = [];
+            notesClicked = [];
+            currentScore += 1;
             resetScores();
-            playNotes(score);
+            playNotes(currentScore);
         } else {
             // End the game here
         }
