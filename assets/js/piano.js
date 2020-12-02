@@ -66,6 +66,8 @@ $(document).ready(function() {
             playNote(randomNote);
             notesPlayed.push(randomNote);
         };
+        console.log(notesPlayed);
+        toggleSubmitButton();
     }
 
     // Function that checks if the notesPlayed and notesClicked arrays match
@@ -99,7 +101,27 @@ $(document).ready(function() {
         score = 0;
         playNotes(score); //Starts the game
     })
-    
+
+    //Checks the scores when the submit button is clicked
+    $("#submit-button").click(function() {
+        //Checks if the submit button is disabled
+        if ($("#submit-button").attr("disabled")) {
+            return;
+        };
+
+        // Check if the user clicked the correct keys
+        let matched = doNotesMatchUp();
+        if (matched) {
+            toggleSubmitButton();
+            notesPlayed.clear();
+            notesClicked.clear();
+            score += 1;
+            resetScores();
+            playNotes(score);
+        } else {
+            // End the game here
+        }
+    })
 
     //Call the resetScores function
     resetScores();
