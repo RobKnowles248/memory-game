@@ -10,6 +10,9 @@ $(document).ready(function() {
     // Initialise the notes clicked array
     var notesClicked = [];
 
+    // Initialise the notes played array
+    var notesPlayed = [];
+
     // Function that checks if a note is white or black and gives a class accordingly
     function whiteOrBlackNote(note) {
 
@@ -46,15 +49,16 @@ $(document).ready(function() {
 
     // Function that will play (score + 1) numbers of notes. It will return an array of the notes played.
     function playNotes(score) {
-        let notesPlayed = [];
+        notesPlayed.clear();
         for (let i = 0; i <= score; i++) {
             let randomNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)];
             console.log(randomNote);
             playNote(randomNote);
             notesPlayed.push(randomNote);
-        }
-        return notesPlayed;
+        };
     }
+
+    // Function that checks if the notesPlayed and notesClicked arrays match
 
     // Reset the scores on index.html
     function resetScores() {
