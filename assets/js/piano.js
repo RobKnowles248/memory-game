@@ -7,6 +7,9 @@ $(document).ready(function() {
     // Make a constant array with the names of the notes
     const pianoNotes = ["c", "cs", "d", "ds", "e", "f", "fs", "g", "gs", "a", "as", "b"];
 
+    // Initialise the notes clicked array
+    var notesClicked = [];
+
     // Function that checks if a note is white or black and gives a class accordingly
     function whiteOrBlackNote(note) {
 
@@ -69,6 +72,7 @@ $(document).ready(function() {
     //Call the playNote function when a note is clicked
     $(".key").click(function() {
         playNote($(this).attr("id"));
+        notesClicked.push($(this).attr("id"));
     });
 
     
