@@ -137,6 +137,7 @@ $(document).ready(function() {
         } else {
             console.log("Game Over");
             toggleSubmitButton();
+            $("#gameOverModal").modal("show");
         }
     })
 
