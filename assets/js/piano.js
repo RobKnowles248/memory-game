@@ -47,6 +47,9 @@ $(document).ready(function() {
             console.log("The function playNote didn't receive a string");
             return;
         }
+        
+        //Play the sound of that note
+        $(`audio#${note}-audio`)[0].play();
 
         //Highlight note for 0.5s
         let colour = whiteOrBlackNote(note);
@@ -55,9 +58,6 @@ $(document).ready(function() {
                 $(`#${note}`).removeClass(`active-${colour}`);
                 clearTimeout(timeOut);
             }, 500);
-        
-        //Play the sound of that note
-        $(`audio#${note}-audio`)[0].play();
     }
 
     // Function that will play (score + 1) numbers of notes. It will return an array of the notes played.
