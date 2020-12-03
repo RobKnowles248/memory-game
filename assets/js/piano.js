@@ -102,16 +102,20 @@ $(document).ready(function() {
         notesClicked.push($(this).attr("id"));
     });
 
-    
-    //Start the game when restart game is clicked
-    $("#restart-button").click(function() {
-        $("#restart-button").text("Restart Game"); //Changes the button to say Restart game rather than start game
+    //Function that restarts the game
+    function restartGame() {
         currentScore = 0;
         resetScores();
         if (!$("#submit-button").attr("disabled")) {
             toggleSubmitButton();
         }
         playNotes(currentScore); //Starts the game
+    }
+    
+    //Start the game when restart game is clicked
+    $("#restart-button").click(function() {
+        $("#restart-button").text("Restart Game"); //Changes the button to say Restart game rather than start game
+        restartGame();
     })
 
     //Checks the scores when the submit button is clicked
@@ -139,6 +143,12 @@ $(document).ready(function() {
             toggleSubmitButton();
             $("#gameOverModal").modal("show");
         }
+    })
+
+    //Restarts the game and closes the modal when the modal restart button is clicked
+    $("#modal-restart-button").click(function() {
+        $("#gameOverModal").modal("hide");
+        restartGame();
     })
 
     //Call the resetScores function
