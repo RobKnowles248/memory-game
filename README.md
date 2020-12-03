@@ -34,10 +34,12 @@ As a player of the game I want:
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
 
-- Modal when page opened explaining the rules of the memory game
 - Piano feature on screen which will play notes and you can play back to.
 - Rolling score and high scores on screen.
- 
+- "Restart game" button to restart the game at any point.
+- "Submit" button to see if your sequence of notes was correct.
+- "Game Over" modal that pops up when you get a sequence wrong and forces you to restart the game.
+  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
