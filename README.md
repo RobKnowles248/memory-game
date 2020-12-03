@@ -14,7 +14,7 @@ To create a memory game that is fun for the user and simple to learn, while gett
 
 ### Developer Goals
 
-- To gain experience using JavaScript and jQuery to create interactive user friendly websites.
+- To gain experience using JavaScript and JQuery to create interactive user friendly websites.
 - To create a game I will enjoy playing.
 
 ### User Stories
@@ -39,14 +39,6 @@ In this section, you should go over the different parts of your project, and des
 - "Restart game" button to restart the game at any point.
 - "Submit" button to see if your sequence of notes was correct.
 - "Game Over" modal that pops up when you get a sequence wrong and forces you to restart the game.
-  
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 - Another feature idea

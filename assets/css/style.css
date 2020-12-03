@@ -241,3 +241,9 @@ footer {
         height: 400px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .page-heading h1 {
+        font-size: 2rem;
+    }
+}
