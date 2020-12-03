@@ -47,7 +47,7 @@ $(document).ready(function() {
             console.log("The function playNote didn't receive a string");
             return;
         }
-        
+
         //Play the sound of that note
         $(`audio#${note}-audio`)[0].play();
 
@@ -68,7 +68,6 @@ $(document).ready(function() {
         let noteNumber = 0;
         var interval = setInterval(function() {
             let randomNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)];
-            console.log(randomNote);
             playNote(randomNote);
             notesPlayed.push(randomNote);
             if (noteNumber >= score) {
@@ -77,7 +76,6 @@ $(document).ready(function() {
             }
             noteNumber += 1;
         }, 1000);
-        console.log(notesPlayed);
         toggleSubmitButton();
     }
 
@@ -103,7 +101,7 @@ $(document).ready(function() {
 
     //Call the playNote function when a note is clicked
     $(".key").click(function() {
-        if (pianoLocked == false) {
+        if (!pianoLocked) {
             playNote($(this).attr("id"));
             notesClicked.push($(this).attr("id"));
         }

@@ -71,6 +71,14 @@ In addition, you should mention in this section how your project looks and works
 
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
+### Bugs discovered
+
+1. Game was easy to break as you could click each key directly after it was played
+    - I solved this by adding a boolean variable `pianoLocked` that when `true`, stopped all the functionality in the notes click event.
+    ![Screenshot of `#key` click event](assets/images/screenshots/key-click-event.png) 
+    - I then added functionality to the `playNotes` function so that `pianoLocked` was `true` while it was playing notes.
+    ![Screenshot of `playNotes` function](assets/images/screenshots/playNotes.png)
+
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
