@@ -228,6 +228,14 @@ footer {
     .piano {
         height: 300px;
     }
+
+    .score-p {
+        padding-right: 90px;
+    }
+
+    .high-score-p {
+        padding-left: 90px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -239,6 +247,16 @@ footer {
 @media screen and (min-width: 1024px) {
     .piano {
         height: 400px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .score-p {
+        padding-right: 20px;
+    }
+
+    .high-score-p {
+        padding-left: 20px;
     }
 }
 
