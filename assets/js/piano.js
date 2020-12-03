@@ -13,6 +13,9 @@ $(document).ready(function() {
     // Initialise the notes played array
     var notesPlayed = [];
 
+    // Initialise the piano locked boolean
+    var pianoLocked = false;
+
     // Function that toggles the submit button enabled or disabled
     function toggleSubmitButton() {
         $("#submit-button").toggleClass("disabled-button");
@@ -59,6 +62,7 @@ $(document).ready(function() {
 
     // Function that will play (score + 1) numbers of notes. It will return an array of the notes played.
     function playNotes(score) {
+        pianoLocked = true;
         notesClicked = [];
         notesPlayed = [];
         let noteNumber = 0;
@@ -69,6 +73,7 @@ $(document).ready(function() {
             notesPlayed.push(randomNote);
             if (noteNumber >= score) {
                 clearInterval(interval);
+                pianoLocked = false;
             }
             noteNumber += 1;
         }, 1000);
@@ -98,8 +103,10 @@ $(document).ready(function() {
 
     //Call the playNote function when a note is clicked
     $(".key").click(function() {
-        playNote($(this).attr("id"));
-        notesClicked.push($(this).attr("id"));
+        if (pianoLocked == false) {
+            playNote($(this).attr("id"));
+            notesClicked.push($(this).attr("id"));
+        }
     });
 
     //Function that restarts the game
