@@ -61,12 +61,17 @@ $(document).ready(function() {
     function playNotes(score) {
         notesClicked = [];
         notesPlayed = [];
-        for (let i = 0; i <= score; i++) {
+        let noteNumber = 0;
+        var interval = setInterval(function() {
             let randomNote = pianoNotes[Math.floor(Math.random() * pianoNotes.length)];
             console.log(randomNote);
             playNote(randomNote);
             notesPlayed.push(randomNote);
-        };
+            if (noteNumber >= score) {
+                clearInterval(interval);
+            }
+            noteNumber += 1;
+        }, 1000);
         console.log(notesPlayed);
         toggleSubmitButton();
     }
