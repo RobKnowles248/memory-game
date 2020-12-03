@@ -196,6 +196,32 @@ footer {
     padding-left: 20px;
 }
 
+/*----------------------------Game Over Modal */
+
+.modal-content {
+    border-radius: 0;
+    border: 5px solid #000;
+    color: #000;
+}
+
+.modal-header {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0;
+    padding: 5px;
+}
+
+.modal-title {
+    font-family: "Goldman", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.modal-body {
+    margin: 0 auto;
+}
+
 /*----------------------------Media Queries */
 
 @media screen and (min-width: 768px) {
