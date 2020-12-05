@@ -116,6 +116,11 @@ $(document).ready(function() {
         }
         playNotes(currentScore); //Starts the game
     }
+
+    $("#start-game").click(function() {
+        window.location.href = "game.html";
+        restartGame();
+    })
     
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
