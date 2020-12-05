@@ -28,7 +28,7 @@
         <div class="row no-gutters top-row">
 
             <!--Game rules section-->
-            <div class="col-12 text-center">
+            <div class="col-12 col-xl-4 text-center">
                 <div class="rules-div">
                     <h3>Rules:</h3>
                     <ol>
@@ -37,12 +37,68 @@
                         <li>Press the submit button to see if you were correct</li>
                         <li>The number of notes played will increase as you get more and more correct</li>
                     </ol>
-                    <button id="start-game" class="game-button">
-                        <a href="game.html">Start Game</a>
-                    </button>
                 </div>
             </div>
 
+            <!--Piano section-->
+            <div class="col-12 col-xl-8 text-center justify-content-center">
+                <div class="piano">
+                    <div id="c" class="key white"></div>
+                    <div id="cs" class="key black"></div>
+                    <div id="d" class="key white"></div>
+                    <div id="ds" class="key black"></div>
+                    <div id="e" class="key white"></div>
+                    <div id="f" class="key white"></div>
+                    <div id="fs" class="key black"></div>
+                    <div id="g" class="key white"></div>
+                    <div id="gs" class="key black"></div>
+                    <div id="a" class="key white"></div>
+                    <div id="as" class="key black"></div>
+                    <div id="b" class="key white"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-row">
+
+            <!--High score-->
+            <div class="col-12 col-xl-4">
+                <div class="score-div text-center">
+                    <p class="score-p">Score: <span id="score"></span> </p>
+                    <p class="high-score-p">High score: <span id="high-score"></span> </p>
+                </div>
+            </div>
+
+            <!--Restart button-->
+            <div class="col-12 col-md-6 col-xl-4 text-center">
+                <button id="restart-button" class="game-button">
+                    Start Game
+                </button>
+            </div>
+
+            <!--Submit button-->
+            <div class="col-12 col-md-6 col-xl-4 text-center">
+                <button id="submit-button" class="game-button disabled-button" disabled>
+                    Submit
+                </button>
+            </div>
+            
+        </div>
+
+        <!--Game Over Modal-->
+        <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title" id="gameOverModalLabel">Game Over</h5>
+                    </div>
+                    <div class="modal-body">
+                        Click "Restart Game" to try again!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="game-button" id="modal-restart-button">Restart Game</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
