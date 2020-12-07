@@ -34,6 +34,10 @@ As a player of the game I want:
 4. A rolling high score to track my progress and give me something to aim for.
 ![Scores screenshot](assets/images/screenshots/scores.png)
 
+5. Clear feedback when I get a sequence of notes correct or incorrect.
+![Correct modal screenshot](assets/images/screenshots/correct-modal.png)
+![Game over modal screenshot](assets/images/screenshots/game-over-modal.png)
+
 ### Wireframes
 
 - [Main page](assets/wireframes/memory-piano.pdf)
