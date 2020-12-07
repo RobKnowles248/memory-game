@@ -64,6 +64,18 @@ footer {
     min-height: calc(100vh - 120px);
 }
 
+.top-row {
+    min-height: calc(0.15 * (100vh - 120px));
+}
+
+.piano-row {
+    min-height: calc(0.7 * (100vh - 120px));
+}
+
+.bottom-row {
+    min-height: calc(0.15 * (100vh - 120px));
+}
+
 /*----------------------------Rules section */
 
 .rules-div {

@@ -27,21 +27,40 @@
     <section class="main-container container-fluid">
         <div class="row no-gutters game-top-row">
 
+            <!--Score-->
             <!--High score-->
-            <div class="col-6">
+            <div class="col-12 col-md-6 col-xl-4">
                 <div class="score-div text-center">
-                    <p class="score-p">Score: <span id="score"></span> </p>
-                    <p class="high-score-p">High score: <span id="high-score"></span> </p>
+                    <p>Score: <span id="score"></span> </p>
                 </div>
             </div>
 
-            <!--Restart button-->
-            <div class="col-6 text-center">
-                <button id="restart-button" class="game-button square-button">
-                    <i class="fas fa-redo"></i>
-                </button>
+            <!--High score-->
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="score-div text-center">
+                    <p>High score: <span id="high-score"></span> </p>
+                </div>
             </div>
 
+            <!--Buttons-->
+            <div class="col-12 col-xl-4">
+                <div class="row">
+
+                    <!--Restart button-->
+                    <div class="col text-center">
+                        <button id="restart-button" class="game-button square-button">
+                            <i class="fas fa-redo"></i>
+                        </button>
+                    </div>
+
+                    <!--Exit game button-->
+                    <div class="col text-center">
+                        <button id="exit-button" class="game-button square-button">
+                            <i class="fas fa-exit"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         
 
