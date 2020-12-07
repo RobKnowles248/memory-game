@@ -64,12 +64,8 @@ footer {
     min-height: calc(100vh - 120px);
 }
 
-.game-top-row {
+.top-row {
     min-height: calc(0.15 * (100vh - 120px));
-}
-
-.piano-row {
-    min-height: calc(0.7 * (100vh - 120px));
 }
 
 .bottom-row {
@@ -242,6 +238,18 @@ footer {
 /*----------------------------Media Queries */
 
 @media screen and (min-width: 768px) {
+    .top-row {
+        min-height: calc(0.3 * (100vh - 120px));
+    }
+    
+    .piano-row {
+        min-height: calc(0.4 * (100vh - 120px));
+    }
+
+    .bottom-row {
+        min-height: calc(0.3 * (100vh - 120px));
+    }
+
     .piano {
         height: 300px;
     }
@@ -262,6 +270,18 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+    .top-row {
+        min-height: calc(0.15 * (100vh - 120px));
+    }
+
+    .piano-row {
+        min-height: calc(0.7 * (100vh - 120px));
+    }
+
+    .bottom-row {
+        min-height: calc(0.15 * (100vh - 120px));
+    }
+
     .rules-div {
         width: 60%;
     }
