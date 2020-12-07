@@ -24,9 +24,15 @@ To create a memory game that is fun for the user and simple to learn, while gett
 As a player of the game I want:
 
 1. Clear and simple instructions on the rules of the game so I am not confused about how to play.
+![Instructions screenshot](assets/images/screenshots/rules.png)
+
 2. An intuitive UI so I can easily play the game.
+![UI screenshot](assets/images/screenshots/ui.png)
+
 3. Continually increasing difficulty so I do not get bored with the game quickly.
+
 4. A rolling high score to track my progress and give me something to aim for.
+![Scores screenshot](assets/images/screenshots/scores.png)
 
 ### Wireframes
 
@@ -41,9 +47,6 @@ In this section, you should go over the different parts of your project, and des
 - "Restart game" button to restart the game at any point.
 - "Submit" button to see if your sequence of notes was correct.
 - "Game Over" modal that pops up when you get a sequence wrong and forces you to restart the game.
-
-### Features Left to Implement
-- Another feature idea
 
 ## Technologies Used
 
