@@ -88,6 +88,23 @@ As a player of the game I want:
 
 - I tested the responsivity of the site using Chrome developer tools and [http://ami.responsivedesign.is/](http://ami.responsivedesign.is/).
 
+### Functionality Testing
+
+All these tests were performed in both the GitPod local server and the deployed live site on GitHub pages.
+
+- I tested the `"#start-game"` click event by clicking on the button and seeing that it changed page to `game.html` and started the game.
+- I tested the `".key"` click event by clicking on a key and seeing that it changed the class to `".active"` for that specific key and played the audio file associated with that key.
+- I tested the `"#restart-button"` click event by clicking on the restart button and seeing that the game restarted and the score went to zero.
+- I tested the `"#exit-button"` click event by clicking on the exit game button and seeing that the page was changed to `index.html`.
+- I tested the `playNotes` function by putting console logs inside the function and playing the game with the console open in Chrome developer tools to make sure the function was workign as expected.
+- I tested the `pianoLocked` functionality by trying to click keys while the sequence was playing and seeing that the `playNote` function was not called.
+- I tested the `"#submit-button"` by playing the game and seeing that it was only clickable when the game was running and a sequence was not playing:
+- I deliberately failed a sequence and clicking Submit to test that the `gameOverModal` popped up.
+- I tested the `"#modal-restart-button"` by clicking it and seeing that the modal disappeared and the game restarted.
+- I tested the `correctModal` by getting a sequence correct and seeing that the modal popped up and disappeared after 1.5 seconds before the game continued.
+- I tested the `updateScores` function by playing the game and seeing that the score and high score was continually updated as expected.
+- I tested the `localStorage` functionality of the `highScore` by reloading the page and seeing that the `highScore` remained the same.
+
 ### Bugs discovered
 
 1. Game was easy to break as you could click each key directly after it was played
