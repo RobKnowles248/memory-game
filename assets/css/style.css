@@ -220,6 +220,7 @@ footer {
 .modal-header {
     background-color: #000;
     color: #fff;
+    border: 0;
     border-radius: 0;
     padding: 5px;
 }

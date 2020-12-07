@@ -141,11 +141,15 @@ $(document).ready(function() {
         let matched = doNotesMatchUp(notesClicked, notesPlayed);
         if (matched) {
             toggleSubmitButton();
-            notesPlayed = [];
-            notesClicked = [];
-            currentScore += 1;
-            resetScores();
-            playNotes(currentScore);
+            $("#correctModal").modal("show");
+            correctTimeOut = setTimeout(function() {
+                $("#correctModal").modal("hide");
+                notesPlayed = [];
+                notesClicked = [];
+                currentScore += 1;
+                resetScores();
+                playNotes(currentScore);
+            }, 1500);
         } else {
             toggleSubmitButton();
             $("#gameOverModal").modal("show");
