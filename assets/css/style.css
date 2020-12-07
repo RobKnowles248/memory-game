@@ -112,10 +112,6 @@ footer {
     display: flex;
 }
 
-.note {
-    display: flex-inline;
-}
-
 .white {
     z-index: 1;
     width: 14%;
