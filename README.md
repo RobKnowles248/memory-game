@@ -40,7 +40,8 @@ As a player of the game I want:
 
 ### Wireframes
 
-- [Main page](assets/wireframes/memory-piano.pdf)
+- [Rules page](assets/wireframes/rules-page.pdf)
+- [Game page](assets/wireframes/game-page.pdf)
 
 ## Features
 
