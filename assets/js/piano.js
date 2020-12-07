@@ -127,6 +127,11 @@ $(document).ready(function() {
         restartGame();
     })
 
+    //Goes back to index.html when the exit game button is clicked
+    $("#exit-button").click(function() {
+        window.location.href = "index.html";
+    })
+
     //Checks the scores when the submit button is clicked
     $("#submit-button").click(function() {
         //Checks if the submit button is disabled
