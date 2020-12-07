@@ -44,7 +44,7 @@ $(document).ready(function() {
 
         //Check if the input is a string
         if (typeof(note) != "string") {
-            console.log("The function playNote didn't receive a string");
+            alert("The function playNote didn't receive a string");
             return;
         }
 
@@ -81,8 +81,6 @@ $(document).ready(function() {
 
     // Function that checks if the notesPlayed and notesClicked arrays match
     function doNotesMatchUp(firstNotes, secondNotes) {
-        console.log(JSON.stringify(firstNotes));
-        console.log(JSON.stringify(secondNotes));
         return JSON.stringify(firstNotes) == JSON.stringify(secondNotes);
     }
 
@@ -139,12 +137,8 @@ $(document).ready(function() {
             return;
         };
 
-        console.log(notesClicked);
-        console.log(notesPlayed);
-
         // Check if the user clicked the correct keys
         let matched = doNotesMatchUp(notesClicked, notesPlayed);
-        console.log(matched);
         if (matched) {
             toggleSubmitButton();
             notesPlayed = [];
@@ -153,7 +147,6 @@ $(document).ready(function() {
             resetScores();
             playNotes(currentScore);
         } else {
-            console.log("Game Over");
             toggleSubmitButton();
             $("#gameOverModal").modal("show");
         }
