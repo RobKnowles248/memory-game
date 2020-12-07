@@ -2,7 +2,11 @@ $(document).ready(function() {
 
     // Initialise the score and high score variables
     var currentScore = 0;
-    var highScore = 0;
+    if (!localStorage.highScore) {
+        localStorage.highScore = 0
+    }
+    var highScore = localStorage.highScore
+    
 
     // Make a constant array with the names of the notes
     const pianoNotes = ["c", "cs", "d", "ds", "e", "f", "fs", "g", "gs", "a", "as", "b"];
@@ -90,6 +94,7 @@ $(document).ready(function() {
         //Reset the high score
         if (highScore < currentScore) {
             highScore = currentScore;
+            localStorage.highScore = highScore;
         };
 
         //Shows the score and high score on index.html
