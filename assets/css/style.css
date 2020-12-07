@@ -184,6 +184,10 @@ footer {
     color: #000;
 }
 
+.square-button i {
+    font-size: 30px;
+}
+
 /*----------------------------Scores section */
 
 .score-div {

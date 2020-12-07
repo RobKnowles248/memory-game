@@ -124,7 +124,6 @@ $(document).ready(function() {
     
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
-        $("#restart-button").text("Restart Game"); //Changes the button to say Restart game rather than start game
         restartGame();
     })
 
