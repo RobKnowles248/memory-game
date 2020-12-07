@@ -2,10 +2,11 @@ $(document).ready(function() {
 
     // Initialise the score and high score variables
     var currentScore = 0;
-    if (!localStorage.highScore) {
-        localStorage.highScore = 0;
+    var storedHighScore = localStorage.getItem("highScore");
+    if (!storedHighScore) {
+        localStorage.setItem("highScore") = 0;
     }
-    var highScore = localStorage.highScore;
+    var highScore = localStorage.getItem("highScore");
     
 
     // Make a constant array with the names of the notes
@@ -94,7 +95,7 @@ $(document).ready(function() {
         //Reset the high score
         if (highScore < currentScore) {
             highScore = currentScore;
-            localStorage.highScore = highScore;
+            localStorage.setItem("highScore") = highScore;
         }
 
         //Shows the score and high score on index.html
@@ -119,11 +120,6 @@ $(document).ready(function() {
         }
         playNotes(currentScore); //Starts the game
     }
-
-    //Move to game.html when the start game button is clicked
-    $("#start-game").click(function() {
-        window.location.href = "game.html";
-    });
     
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
