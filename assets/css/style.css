@@ -158,6 +158,14 @@ footer {
     color: #000;
 }
 
+.square-button {
+
+}
+
+.square-button i {
+    color: #fff;
+}
+
 /*----------------------------Scores section */
 
 .score-div {

@@ -25,23 +25,29 @@
 
     <!--Main section of page-->
     <section class="main-container container-fluid">
-        <div class="row no-gutters top-row">
+        <div class="row no-gutters game-top-row">
 
-            <!--Game rules section-->
-            <div class="col-12 col-xl-4 text-center">
-                <div class="rules-div">
-                    <h3>Rules:</h3>
-                    <ol>
-                        <li>Wait for the piano to play series of notes</li>
-                        <li>Repeat back what was played after it has finished playing.</li>
-                        <li>Press the submit button to see if you were correct</li>
-                        <li>The number of notes played will increase as you get more and more correct</li>
-                    </ol>
+            <!--High score-->
+            <div class="col-6">
+                <div class="score-div text-center">
+                    <p class="score-p">Score: <span id="score"></span> </p>
+                    <p class="high-score-p">High score: <span id="high-score"></span> </p>
                 </div>
             </div>
 
-            <!--Piano section-->
-            <div class="col-12 col-xl-8 text-center justify-content-center">
+            <!--Restart button-->
+            <div class="col-6 text-center">
+                <button id="restart-button" class="game-button square-button">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+
+        </div>
+        
+
+        <!--Piano section-->
+        <div class="row no-gutters piano-row">
+            <div class="col-12 text-center justify-content-center">
                 <div class="piano">
                     <div id="c" class="key white"></div>
                     <div id="cs" class="key black"></div>
@@ -58,25 +64,11 @@
                 </div>
             </div>
         </div>
+
         <div class="row bottom-row">
 
-            <!--High score-->
-            <div class="col-12 col-xl-4">
-                <div class="score-div text-center">
-                    <p class="score-p">Score: <span id="score"></span> </p>
-                    <p class="high-score-p">High score: <span id="high-score"></span> </p>
-                </div>
-            </div>
-
-            <!--Restart button-->
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <button id="restart-button" class="game-button">
-                    Start Game
-                </button>
-            </div>
-
             <!--Submit button-->
-            <div class="col-12 col-md-6 col-xl-4 text-center">
+            <div class="col-12 text-center">
                 <button id="submit-button" class="game-button disabled-button" disabled>
                     Submit
                 </button>
