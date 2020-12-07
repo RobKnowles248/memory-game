@@ -71,6 +71,12 @@ For any scenarios that have not been automated, test the user stories manually a
     - I then added functionality to the `playNotes` function so that `pianoLocked` was `true` while it was playing notes.
     ![Screenshot of `playNotes` function](assets/images/screenshots/playNotes.png)
 
+2. Audio loading bug
+    - The audio files were not loading very quickly so if you started clicking notes before they loaded, the sound was very delayed.
+    - Initially the site was composed of one page so you could immediately start clicking notes.
+    - I solved this by adding an intro page, `index.html`, to the site with the rules before you were able to start the game at `game.html`.
+    - I put the sound files on both `index.html` and `game.html` so they would load on `index.html` while you were reading the rules and already be cached so that there were no issues with them loading on `game.html`.
+
 ## Deployment
 
 This page was deployed on GitHub pages using the master branch and will automatically update upon any new commits to the master branch.
