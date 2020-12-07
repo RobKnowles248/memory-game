@@ -65,6 +65,10 @@ As a player of the game I want:
 - "Correct" modal that pops up whenever you get a sequence correct.
 ![Correct modal screenshot](assets/images/screenshots/correct-modal.png)
 
+- High score value stored in local storage.
+![Screenshot of initialisation of highScore variable using localStorage](assets/images/screenshots/local-storage-1.png)
+![Screenshot of resetting highScore in localStorage](assets/images/screenshots/local-storage-2.png)
+
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML#:~:text=Hypertext%20Markup%20Language%20(HTML)%20is,scripting%20languages%20such%20as%20JavaScript.)
