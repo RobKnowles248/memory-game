@@ -77,10 +77,10 @@ $(document).ready(function() {
             if (noteNumber >= score) {
                 clearInterval(interval);
                 pianoLocked = false;
+                toggleSubmitButton();
             }
             noteNumber += 1;
         }, 1000);
-        toggleSubmitButton();
     }
 
     // Function that checks if the notesPlayed and notesClicked arrays match
@@ -123,7 +123,6 @@ $(document).ready(function() {
     //Move to game.html and start the game when the start game button is clicked
     $("#start-game").click(function() {
         window.location.href = "game.html";
-        restartGame();
     });
     
     //Start the game when restart game is clicked
@@ -171,4 +170,7 @@ $(document).ready(function() {
 
     //Call the resetScores function
     resetScores();
+
+    //Call the restartGame function so that the game starts when game.html is opened
+    restartGame();
 });
