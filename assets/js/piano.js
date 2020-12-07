@@ -95,7 +95,7 @@ $(document).ready(function() {
         if (highScore < currentScore) {
             highScore = currentScore;
             localStorage.highScore = highScore;
-        };
+        }
 
         //Shows the score and high score on index.html
         $("#score").text(currentScore);
@@ -123,31 +123,31 @@ $(document).ready(function() {
     $("#start-game").click(function() {
         window.location.href = "game.html";
         restartGame();
-    })
+    });
     
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
         restartGame();
-    })
+    });
 
     //Goes back to index.html when the exit game button is clicked
     $("#exit-button").click(function() {
         window.location.href = "index.html";
-    })
+    });
 
     //Checks the scores when the submit button is clicked
     $("#submit-button").click(function() {
         //Checks if the submit button is disabled
         if ($("#submit-button").attr("disabled")) {
             return;
-        };
+        }
 
         // Check if the user clicked the correct keys
         let matched = doNotesMatchUp(notesClicked, notesPlayed);
         if (matched) {
             toggleSubmitButton();
             $("#correctModal").modal("show");
-            correctTimeOut = setTimeout(function() {
+            var correctTimeOut = setTimeout(function() {
                 $("#correctModal").modal("hide");
                 notesPlayed = [];
                 notesClicked = [];
@@ -160,14 +160,14 @@ $(document).ready(function() {
             toggleSubmitButton();
             $("#gameOverModal").modal("show");
         }
-    })
+    });
 
     //Restarts the game and closes the modal when the modal restart button is clicked
     $("#modal-restart-button").click(function() {
         $("#gameOverModal").modal("hide");
         restartGame();
-    })
+    });
 
     //Call the resetScores function
     resetScores();
-})
+});

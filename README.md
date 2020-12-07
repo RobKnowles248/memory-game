@@ -84,6 +84,8 @@ As a player of the game I want:
 
 - The CSS in `style.css` was tested using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/validator).
 
+- The JavaScript in `piano.js` was tested using [JSHint](https://jshint.com/).
+
 - I tested the responsivity of the site using Chrome developer tools and [http://ami.responsivedesign.is/](http://ami.responsivedesign.is/).
 
 ### Bugs discovered
