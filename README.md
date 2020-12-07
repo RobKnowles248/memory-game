@@ -44,13 +44,26 @@ As a player of the game I want:
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-
 - Piano feature on screen which will play notes and you can play back to.
+![Piano screenshot](assets/images/screenshots/piano.png)
+
 - Rolling score and high scores on screen.
+![Scores screenshot](assets/images/screenshots/scores.png)
+
 - "Restart game" button to restart the game at any point.
+![Restart button screenshot](assets/images/screenshots/restart-button.png)
+
+- "Exit game" button to return to the instructions page.
+![Exit game button screenshot](assets/images/screenshots/exit-button.png)
+
 - "Submit" button to see if your sequence of notes was correct.
+![Submit button screenshot](assets/images/screenshots/submit-button.png)
+
 - "Game Over" modal that pops up when you get a sequence wrong and forces you to restart the game.
+![Game over modal screenshot](assets/images/screenshots/game-over-modal.png)
+
+- "Correct" modal that pops up whenever you get a sequence correct.
+![Correct modal screenshot](assets/images/screenshots/correct-modal.png)
 
 ## Technologies Used
 
