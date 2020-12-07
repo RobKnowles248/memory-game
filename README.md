@@ -6,7 +6,7 @@ Created for my Code Institute Interactive Frontend Development milestone project
 
 A link to the live site can be found [here](https://robknowles248.github.io/memory-game/).
 
-![Am I responsive screenshot](assets/images/screenshots/responsive-screenshot.png)
+![Am I responsive screenshot](assets/images/screenshots/am-i-responsive-screenshot.png)
  
 ## UX
 
