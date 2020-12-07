@@ -120,7 +120,7 @@ $(document).ready(function() {
         playNotes(currentScore); //Starts the game
     }
 
-    //Move to game.html and start the game when the start game button is clicked
+    //Move to game.html when the start game button is clicked
     $("#start-game").click(function() {
         window.location.href = "game.html";
     });

@@ -123,6 +123,15 @@ All these tests were performed in both the GitPod local server and the deployed 
     - I put the sound files on both `index.html` and `game.html` so they would load on `index.html` while you were reading the rules and already be cached so that there were no issues with them loading on `game.html`.
     ![Screenshot of where audio is loaded on index.html](assets/images/screenshots/audio.png)
 
+3. Game not starting bug
+    - Initially the `Start Game` button on `index.html` was coded so that on it's click event, the page was changed to `game.html` and the `restartGame()` function was called.
+    ![Screenshot of the start game click event initially](assets/images/screenshots/start-game-click-1.png)
+    - However, when the button was clicked, the page did change to `game.html` but the game did not start.
+    - I solved this problem by instead calling the `restartGame()` function in the main `$(document).ready(function() {})` section.
+    ![Screenshot of the edited start game click event](assets/images/screeshots/start-game-click-2.png)
+    ![Screenshot of the restartGame function being called](assets/images/screenshots/restart-game.png)
+    - This gave the desired functionality of the game beginning when `game.html` was loaded.
+
 ## Deployment
 
 This page was deployed on GitHub pages using the master branch and will automatically update upon any new commits to the master branch.
