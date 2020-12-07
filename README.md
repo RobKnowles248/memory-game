@@ -120,7 +120,7 @@ All these tests were performed in both the GitPod local server and the deployed 
     - Initially the site was composed of one page so you could immediately start clicking notes.
     ![Screenshot of single page site](assets/images/screenshots/one-page-site.png)
     - I solved this by adding an intro page, `index.html`, to the site with the rules before you were able to start the game at `game.html`.
-    ![Screenshot of instructions page](assets/images/screenshots/instruction-page.png)
+    ![Screenshot of instructions page](assets/images/screenshots/instructions-page.png)
     ![Screenshot of game page](assets/images/screenshots/game-page.png)
     - I put the sound files on both `index.html` and `game.html` so they would load on `index.html` while you were reading the rules and already be cached so that there were no issues with them loading on `game.html`.
     ![Screenshot of where audio is loaded on index.html](assets/images/screenshots/audio.png)
@@ -130,7 +130,7 @@ All these tests were performed in both the GitPod local server and the deployed 
     ![Screenshot of the start game click event initially](assets/images/screenshots/start-game-click-1.png)
     - However, when the button was clicked, the page did change to `game.html` but the game did not start.
     - I solved this problem by instead calling the `restartGame()` function in the main `$(document).ready(function() {})` section and only loading `piano.js` in `game.html`.
-    ![Screenshot of the edited start game click event](assets/images/screeshots/start-game-click-2.png)
+    ![Screenshot of the edited start game click event](assets/images/screenshots/start-game-click-2.png)
     ![Screenshot of the restartGame function being called](assets/images/screenshots/restart-game.png)
     - This gave the desired functionality of the game beginning when `game.html` was loaded.
     - The limited JavaScript needed on `index.html` was moved to script tags at the bottom of the page.
