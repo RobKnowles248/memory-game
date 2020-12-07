@@ -246,34 +246,24 @@ footer {
         height: 300px;
     }
 
-    .score-p {
-        padding-right: 90px;
-    }
-
-    .high-score-p {
-        padding-left: 90px;
+    .rules-div {
+        width: 80%;
     }
 }
 
 @media screen and (min-width: 992px) {
     .piano {
-        height: 350px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .piano {
         height: 400px;
+    }
+
+    .rules-div {
+        width: 70%;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .score-p {
-        padding-right: 20px;
-    }
-
-    .high-score-p {
-        padding-left: 20px;
+    .rules-div {
+        width: 60%;
     }
 }
 
