@@ -154,6 +154,7 @@ $(document).ready(function() {
                 currentScore += 1;
                 resetScores();
                 playNotes(currentScore);
+                clearTimeout(correctTimeOut);
             }, 1500);
         } else {
             toggleSubmitButton();

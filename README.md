@@ -96,8 +96,12 @@ As a player of the game I want:
 2. Audio loading bug
     - The audio files were not loading very quickly so if you started clicking notes before they loaded, the sound was very delayed.
     - Initially the site was composed of one page so you could immediately start clicking notes.
+    ![Screenshot of single page site](assets/images/screenshots/one-page-site.png)
     - I solved this by adding an intro page, `index.html`, to the site with the rules before you were able to start the game at `game.html`.
+    ![Screenshot of instructions page](assets/images/screenshots/instruction-page.png)
+    ![Screenshot of game page](assets/images/screenshots/game-page.png)
     - I put the sound files on both `index.html` and `game.html` so they would load on `index.html` while you were reading the rules and already be cached so that there were no issues with them loading on `game.html`.
+    ![Screenshot of where audio is loaded on index.html](assets/images/screenshots/audio.png)
 
 ## Deployment
 
