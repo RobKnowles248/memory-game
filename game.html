@@ -51,30 +51,28 @@
 
                     <!--Restart button-->
                     <div class="col-12 col-md-auto text-center">
-                        <button id="restart-button" class="square-button">
-                            <div class="row no-gutters align-items-center justify-content-center">
-                                <div class="col-auto">
-                                    <span class="square-button-text">Restart </span>
-                                </div>
-                                <div class="col-auto">
-                                    <i class="fa fa-undo"></i>
-                                </div>
+                        <!--Div rather than a button as a W3C validator error ocurred when using a button as there are divs inside it-->
+                        <div id="restart-button" class="square-button row no-gutters align-items-center justify-content-center">
+                            <div class="col-auto">
+                                <span class="square-button-text">Restart </span>
                             </div>
-                        </button>
+                            <div class="col-auto">
+                                <i class="fa fa-undo"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <!--Exit game button-->
                     <div class="col-12 col-md-auto text-center">
-                        <button id="exit-button" class="square-button">
-                            <div class="row no-gutters align-items-center justify-content-center">
-                                <div class="col-auto">
-                                    <span class="square-button-text">Exit </span>
-                                </div>
-                                <div class="col-auto">
-                                    <i class="fa fa-times"></i>
-                                </div>
+                        <!--Div rather than a button as a W3C validator error ocurred when using a button as there are divs inside it-->
+                        <div id="exit-button" class="square-button row no-gutters align-items-center justify-content-center">
+                            <div class="col-auto">
+                                <span class="square-button-text">Exit </span>
                             </div>
-                        </button>
+                            <div class="col-auto">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,7 +139,7 @@
         </div>
 
         <!--Start Game Modal-->
-        <div class="modal" id="startGameModal" tabindex="-1" role="dialog" aria-labelledby="startModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+        <div class="modal" id="startGameModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
             <div class="modal-dialog .modal-dialog-centered" role="document">
                 <div class="modal-content no-border-modal-content">
                     <button type="button" class="game-button modal-start-button" id="modal-start-button">Start Game</button>
