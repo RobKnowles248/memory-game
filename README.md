@@ -72,6 +72,9 @@ As a player of the game I want:
 ![Screenshot of initialisation of highScore variable using localStorage](assets/images/screenshots/local-storage-1.png)
 ![Screenshot of resetting highScore in localStorage](assets/images/screenshots/local-storage-2.png)
 
+- Counts down from three when game starts. This prevents the user from spamming the restart button and gives some warning before the game plays a note.
+![Screenshot of the countdown](assets/images/screenshots/countdown.png)
+
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML#:~:text=Hypertext%20Markup%20Language%20(HTML)%20is,scripting%20languages%20such%20as%20JavaScript.)
@@ -106,6 +109,7 @@ All these tests were performed in both the GitPod local server and the deployed 
 - I tested the `correctModal` by getting a sequence correct and seeing that the modal popped up and disappeared after 1.5 seconds before the game continued.
 - I tested the `updateScores` function by playing the game and seeing that the score and high score was continually updated as expected.
 - I tested the `localStorage` functionality of the `highScore` by reloading the page and seeing that the `highScore` remained the same.
+- I tested the `countDown` function by starting the game via the start game, restart game and modal restart game buttons and checking that the 3, 2, 1 countdown worked correctly.
 
 ### Bugs discovered
 
