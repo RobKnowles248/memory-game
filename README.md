@@ -136,10 +136,12 @@ All these tests were performed in both the GitPod local server and the deployed 
     - The limited JavaScript needed on `index.html` was moved to script tags at the bottom of the page.
     ![Screenshot of the JavaScript on index.html](assets/images/screenshots/index-js.png)
 
-4. Chrome Autoplay policy
+4. Chrome Autoplay policy bug
     - When running `game.html` I was receiving this console error:
-    ![Screenshot of console error about chrome's autoplay policy](assets/screenshots/chrome-autoplay-bug.png)
+    ![Screenshot of console error about chrome's autoplay policy](assets/images/screenshots/chrome-autoplay-bug.png)
     - This was happening as I was calling `restartGame()` when `game.html` opened which played a piano note sound which was against [Chrome Autoplay policies](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes).
+    - I solved this issue by adding a Start Game modal that opened when `game.html` loaded so that a click was required to start the game and it did not begin automatically.
+    ![Screenshot of start game modal](assets/images/screenshots/start-game-modal.png)
 
 ## Deployment
 

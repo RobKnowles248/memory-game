@@ -174,5 +174,5 @@ $(document).ready(function() {
     $("#modal-start-button").click(function() {
         $("#startGameModal").modal("hide");
         restartGame();
-    })
+    });
 });
