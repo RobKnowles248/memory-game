@@ -111,6 +111,26 @@ $(document).ready(function() {
         }
     });
 
+    //Function that counts down to starting the game
+    function countDown() {
+        $("#threeModal").modal("show");
+        var threeTimeOut = setTimeout(function() {
+            $("#threeModal").modal("hide");
+            $("#twoModal").modal("show");
+            clearTimeout(threeTimeOut);
+            var twoTimeOut = setTimeout(function() {
+                $("#twoModal").modal("hide");
+                $("#oneModal").modal("show");
+                clearTimeout(twoTimeOut);
+                var oneTimeOut = setTimeout(function() {
+                    $("#oneModal").modal("hide");
+                    clearTimeout(oneTimeOut);
+                    restartGame();
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }
+
     //Function that restarts the game
     function restartGame() {
         currentScore = 0;
@@ -123,7 +143,7 @@ $(document).ready(function() {
     
     //Start the game when restart game is clicked
     $("#restart-button").click(function() {
-        restartGame();
+        countDown();
     });
 
     //Goes back to index.html when the exit game button is clicked
@@ -161,7 +181,7 @@ $(document).ready(function() {
     //Restarts the game and closes the modal when the modal restart button is clicked
     $("#modal-restart-button").click(function() {
         $("#gameOverModal").modal("hide");
-        restartGame();
+        countDown();
     });
 
     //Call the resetScores function
@@ -173,6 +193,6 @@ $(document).ready(function() {
     //Start the game and close the start modal when it is clicked
     $("#modal-start-button").click(function() {
         $("#startGameModal").modal("hide");
-        restartGame();
+        countDown();
     });
 });
