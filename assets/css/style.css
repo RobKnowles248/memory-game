@@ -97,7 +97,7 @@ footer {
 /*----------------------------Piano Object */
 
 .piano {
-    height: 200px;
+    height: 250px;
     width: 98%;
     padding: 15px;
     background-color: #000;
@@ -165,10 +165,13 @@ footer {
 
 .square-button {
     background-color: #000;
+    margin-right: 20px;
     height: 60px;
     width: 60px;
     color: #fff;
     border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .square-button:hover {
@@ -181,12 +184,17 @@ footer {
     font-size: 30px;
 }
 
+.square-button-text {
+    display: none;
+    font-size: 20px;
+}
+
 /*----------------------------Scores section */
 
 .score-div {
-    width: 90%;
+    width: 150px;
     height: 60px;
-    margin: 0 auto;
+    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0;
@@ -238,6 +246,23 @@ footer {
 
 /*----------------------------Media Queries */
 
+@media screen and (min-width: 576px) {
+
+    .piano {
+        height: 300px;
+    }
+
+    .square-button {
+        min-width: 130px;
+    }
+
+    .square-button-text {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
     .top-row {
         min-height: calc(0.3 * (100vh - 120px));
@@ -251,13 +276,10 @@ footer {
         min-height: calc(0.3 * (100vh - 120px));
     }
 
-    .piano {
-        height: 300px;
-    }
-
     .rules-div {
         width: 80%;
     }
+
 }
 
 @media screen and (min-width: 992px) {

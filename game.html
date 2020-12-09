@@ -27,36 +27,53 @@
     <section class="main-container container-fluid">
         <div class="row no-gutters top-row align-items-center">
 
-            <!--Score-->
-            <!--High score-->
-            <div class="col-12 col-md-6 col-xl-4">
-                <div class="score-div text-center">
-                    <p>Score: <span id="score"></span> </p>
-                </div>
-            </div>
+            <div class="col-9 col-md-7">
+                <div class="row no-gutters justify-content-start">
+                    <!--Score-->
+                    <div class="col-12 col-md-auto">
+                        <div class="score-div text-center">
+                            <p>Score: <span id="score"></span> </p>
+                        </div>
+                    </div>
 
-            <!--High score-->
-            <div class="col-12 col-md-6 col-xl-4">
-                <div class="score-div text-center">
-                    <p>High score: <span id="high-score"></span> <i class="fas fa-redo"></i></p>
+                    <!--High score-->
+                    <div class="col-12 col-md-auto">
+                        <div class="score-div text-center">
+                            <p>High score: <span id="high-score"></span> <i class="fas fa-redo"></i></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!--Buttons-->
-            <div class="col-12 col-xl-4">
-                <div class="row">
+            <div class="col-3 col-md-5">
+                <div class="row no-gutters justify-content-end">
 
                     <!--Restart button-->
-                    <div class="col text-center">
+                    <div class="col-12 col-md-auto text-center">
                         <button id="restart-button" class="square-button">
-                            <i class="fa fa-undo"></i>
+                            <div class="row no-gutters align-items-center justify-content-center">
+                                <div class="col-auto">
+                                    <span class="square-button-text">Restart </span>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-undo"></i>
+                                </div>
+                            </div>
                         </button>
                     </div>
 
                     <!--Exit game button-->
-                    <div class="col text-center">
+                    <div class="col-12 col-md-auto text-center">
                         <button id="exit-button" class="square-button">
-                            <i class="fa fa-times"></i>
+                            <div class="row no-gutters align-items-center justify-content-center">
+                                <div class="col-auto">
+                                    <span class="square-button-text">Exit </span>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
                         </button>
                     </div>
                 </div>
