@@ -136,6 +136,11 @@ All these tests were performed in both the GitPod local server and the deployed 
     - The limited JavaScript needed on `index.html` was moved to script tags at the bottom of the page.
     ![Screenshot of the JavaScript on index.html](assets/images/screenshots/index-js.png)
 
+4. Chrome Autoplay policy
+    - When running `game.html` I was receiving this console error:
+    ![Screenshot of console error about chrome's autoplay policy](assets/screenshots/chrome-autoplay-bug.png)
+    - This was happening as I was calling `restartGame()` when `game.html` opened which played a piano note sound which was against [Chrome Autoplay policies](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes).
+
 ## Deployment
 
 This page was deployed on GitHub pages using the master branch and will automatically update upon any new commits to the master branch.

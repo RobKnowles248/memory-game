@@ -113,7 +113,7 @@
         </div>
 
         <!--Game Over Modal-->
-        <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+        <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header text-center">
@@ -130,12 +130,21 @@
         </div>
 
         <!--Correct Modal-->
-        <div class="modal fade" id="correctModal" tabindex="-1" role="dialog" aria-labelledby="correctModalLabel" aria-hidden="true">
+        <div class="modal fade" id="correctModal" tabindex="-1" role="dialog" aria-labelledby="correctModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header text-center">
                         <h5 class="modal-title" id="correctModalLabel">Correct <i class="fa fa-check"></i></h5>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Start Game Modal-->
+        <div class="modal fade" id="startGameModal" tabindex="-1" role="dialog" aria-labelledby="startModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+            <div class="modal-dialog .modal-dialog-centered" role="document">
+                <div class="modal-content start-modal-content">
+                    <button type="button" class="game-button modal-start-button" id="modal-start-button">Start Game</button>
                 </div>
             </div>
         </div>

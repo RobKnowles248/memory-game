@@ -167,6 +167,12 @@ $(document).ready(function() {
     //Call the resetScores function
     resetScores();
 
-    //Call the restartGame function so that the game starts when game.html is opened
-    restartGame();
+    //Call the startGame modal to be able to start the game when game.html is loaded
+    $("#startGameModal").modal("show");
+
+    //Start the game and close the start modal when it is clicked
+    $("#modal-start-button").click(function() {
+        $("#startGameModal").modal("hide");
+        restartGame();
+    })
 });
