@@ -126,9 +126,9 @@ $(document).ready(function() {
                     $("#oneModal").modal("hide");
                     clearTimeout(oneTimeOut);
                     restartGame();
-                }, 1000)
-            }, 1000)
-        }, 1000)
+                }, 1000);
+            }, 1000);
+        }, 1000);
     }
 
     //Function that restarts the game
