@@ -4,7 +4,7 @@ $(document).ready(function() {
     var currentScore = 0;
     var storedHighScore = localStorage.getItem("highScore");
     if (!storedHighScore) {
-        localStorage.setItem("highScore") = 0;
+        localStorage.setItem("highScore", 0);
     }
     var highScore = localStorage.getItem("highScore");
     
@@ -95,7 +95,7 @@ $(document).ready(function() {
         //Reset the high score
         if (highScore < currentScore) {
             highScore = currentScore;
-            localStorage.setItem("highScore") = highScore;
+            localStorage.setItem("highScore", highScore);
         }
 
         //Shows the score and high score on index.html
